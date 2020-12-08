@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Boda Juan Luis y Patricia</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="UTF-8" />
+        <link rel="icon" href="favicon.png" type="image/x-icon" />
+
+        <!-- Font -->
+        <link
+            href="https://fonts.googleapis.com/css?family=Playball%7CBitter"
+            rel="stylesheet"
+        />
+
+        <!-- Stylesheets -->
+        <link href="common-css/bootstrap.css" rel="stylesheet" />
+        <link href="common-css/font-icon.css" rel="stylesheet" />
+        <link href="contact/css/styles.css" rel="stylesheet" />
+        <link href="contact/css/responsive.css" rel="stylesheet" />
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <a class="logo" href="index.html"
+                    ><img src="images/logo-white.png" alt="Logo"
+                /></a>
+
+                <div class="menu-nav-icon" data-nav-menu="#main-menu">
+                    <i class="icon icon-bars"></i>
+                </div>
+
+                <ul class="main-menu visible-on-click" id="main-menu">
+                    <li><a href="index.html">INICIO</a></li>
+                    <li class="drop-down">
+                        <a href="#!"
+                            >LA BODA<i class="icon icon-caret-down"></i
+                        ></a>
+
+                        <ul class="drop-down-menu">
+                            <li><a href="#">CEREMONIA</a></li>
+                            <li><a href="#">BANQUETE</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTÁCTANOS</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <div class="main-slider">
+            <div class="display-table center-text">
+                <div class="display-table-cell">
+                    <div class="slider-content">
+                        <h3 class="pre-title">¿Alguna duda?</h3>
+                        <h1 class="title">CONTÁCTANOS</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="section contact-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-4 col-lg-6">
+                        <div class="margin-bottom display-table">
+                            <div class="display-table-cell">
+                                <div class="heading">
+                                    <h2 class="title">¿Alguna duda?</h2>
+                                </div>
+
+                                <p>
+                                    ¿No estás segura de tu vestido? ¿Puedes
+                                    llevar a los niños? ¿Alguna aclaración? Si
+                                    tienes cualquier pregunta para nosotros o
+                                    nos quieres comentar algo, ponlo aquí y nos
+                                    llegará directamente a nuestro mail.
+                                    ¡Gracias por tu mensaje!
+                                </p>
+                                <h3>
+                                    <a href="tel:784-412-0646" class="phone"
+                                        >XXX-XXX-XXX</a
+                                    >
+                                </h3>
+                                <h3>
+                                    <a href="tel:784-412-0245" class="phone"
+                                        >XXX-XXX-XXX</a
+                                    >
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-8 col-lg-6">
+                        <div class="contact-form margin-bottom">
+                            <div class="heading center-text">
+                                <h2 class="title">Contáctanos</h2>
+                                <i class="icon icon-star"></i>
+                            </div>
+                            <form
+                                action="https://formspree.io/f/xeqprqog"
+                                method="POST"
+                            >
+                                <div class="row">
+                                    <div class="col-sm-12 margin-bottom">
+                                        <label for="name-input">Nombre</label>
+                                        <input
+                                            class="name-input"
+                                            id="name-input"
+                                            type="text"
+                                            name="name"
+                                            required="required"
+                                        />
+                                    </div>
+                                    <div class="col-sm-12 margin-bottom">
+                                        <label for="email-input">Email</label>
+                                        <input
+                                            type="text"
+                                            class="email-input"
+                                            id="email-input"
+                                            name="email"
+                                            required="required"
+                                        />
+                                    </div>
+                                    <div class="col-sm-12 margin-bottom">
+                                        <label for="comment-input"
+                                            >Comentario</label
+                                        >
+                                        <textarea
+                                            id="comment-input"
+                                            name="comment"
+                                            class="col-sm-12"
+                                            rows="4"
+                                            required="required"
+                                        ></textarea>
+                                    </div>
+                                    <div class="col-sm-12 margin-bottom">
+                                        <div
+                                            class="g-recaptcha"
+                                            data-sitekey="6Lc1UP4ZAAAAADB3dNRZIwH_Jbx6gp7TGsxDiRQB"
+                                        ></div>
+                                    </div>
+                                    <div class="col-sm-12 center-text">
+                                        <button class="btn" type="submit">
+                                            <b>Enviar comentario</b>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container center-text">
+                <div class="logo-wrapper">
+                    <a class="logo" href="#"
+                        ><img src="images/logo-black.png" alt="Logo Image"
+                    /></a>
+                    <i class="icon icon-star"></i>
+                </div>
+
+                <div class="newsletter">
+                    <h4 class="title">RECEIVE NEWS IN YOUR EMAIL</h4>
+                    <p>
+                        Join our mailing list to receive news and announcements
+                    </p>
+                    <div class="email-area">
+                        <form>
+                            <input
+                                class="email-input"
+                                type="text"
+                                placeholder="Your Email"
+                            />
+                            <button class="submit-btn" type="submit">
+                                <i class="icon icon-email-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <ul class="social-icons">
+                    <li>
+                        <a href="#"><i class="icon icon-heart"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="icon icon-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="icon icon-instagram"></i></a>
+                    </li>
+                </ul>
+
+                <ul class="footer-links">
+                    <li><a href="#">INICIO</a></li>
+                    <li><a href="#">LA BODA</a></li>
+                    <li><a href="#">CONTÁCTANOS</a></li>
+                </ul>
+
+                <p class="copyright">
+                    Copyright &copy;
+                    <script>
+                        document.write(new Date().getFullYear());
+                    </script>
+                    All rights reserved | This template is made with
+                    <i class="icon-heart" aria-hidden="true"></i> by
+                    <a href="https://colorlib.com" target="_blank">Colorlib</a>.
+                </p>
+            </div>
+        </footer>
+
+        <!-- SCIPTS -->
+        <script
+            src="https://www.google.com/recaptcha/api.js"
+            async
+            defer
+        ></script>
+        <script src="common-js/jquery-3.1.1.min.js"></script>
+        <script src="common-js/tether.min.js"></script>
+        <script src="common-js/bootstrap.js"></script>
+        <script src="common-js/scripts.js"></script>
+    </body>
+</html>
