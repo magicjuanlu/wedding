@@ -19,6 +19,13 @@
     background-position: 71% center;
 }
 
+.slider-content {
+    position: absolute;
+    top: 65%;
+    left: 0;
+    right: 0;
+}
+
 .slider-content .date {
     margin: 10px 0 0;
     text-transform: uppercase;
