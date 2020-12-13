@@ -217,22 +217,8 @@
     box-shadow: 1px 10px 40px rgba(0, 0, 0, 0.4);
 }
 
-.contact-area .contact-wrapper {
-    width: 50%;
-}
-
-.contact-area .map-area {
-    width: 50%;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-}
-
-.contact-area .phone {
-    margin: 10px 0;
-    font-size: 2em;
-    color: #e45f74;
+.contact-area .desc {
+    margin-bottom: 15px;
 }
 
 /* ---------------------------------
@@ -242,11 +228,7 @@
 .ceremony-area {
     display: flex;
     overflow: hidden;
-}
-
-.ceremony-area-2 {
-    flex-direction: row-reverse;
-    box-shadow: 1px 10px 40px rgba(0, 0, 0, 0.4);
+    background: url(../../images/Background_Circle.png);
 }
 
 .ceremony-area .location {
@@ -254,16 +236,93 @@
     color: #e45f74;
 }
 
-.ceremony-area .map-area iframe{
-    width:100%;
+.map-area {
+    padding: 0px;
 }
 
+.map-area iframe {
+    height: 100%;
+    width: 100%;
+}
+
+.celebration-area {
+    display: flex;
+    overflow: hidden;
+    flex-direction: row-reverse;
+    box-shadow: 1px 10px 40px rgba(0, 0, 0, 0.4);
+}
+
+.celebration-area > div {
+    position: relative;
+    z-index: 1;
+    background-image: url(../../images/viñedos.jpg);
+    background-size: cover;
+    color: #fff;
+}
+
+.celebration-area > div:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.celebration-area p {
+    color: #fff;
+}
+
+.celebration-area .location {
+    font-size: 1.6em;
+}
 
 /* Screens Resolution : 767px
 -------------------------------------------------------------------------- */
 @media only screen and (max-width: 767px) {
-
-    .ceremony-area {
-        display: contents;
+    .ceremony-area,
+    .celebration-area {
+        display: inherit;
     }
-} 
+    .map-area {
+        height: 23em;
+    }
+
+    .ceremony-area .map-area {
+        margin-bottom: 3em;
+    }
+
+    /* ---------------------------------
+	7. WEDDING DETAILS AREA
+	--------------------------------- */
+
+    .wedding-details {
+        margin-left: 15px;
+        overflow: visible;
+    }
+
+    .wedding-details:after {
+        left: 0;
+        margin-left: 0px;
+    }
+
+    .w-detail {
+        width: 100%;
+        padding: 0 0 0 30px;
+        margin: 0 0 30px;
+    }
+
+    .w-detail.left,
+    .w-detail.right {
+        text-align: left;
+        float: none;
+    }
+
+    .w-detail.right:after,
+    .w-detail.left:after {
+        left: 0;
+        margin-left: -9px;
+    }
+}
