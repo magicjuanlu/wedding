@@ -73,7 +73,7 @@
 .counter-area {
     position: relative;
     z-index: 1;
-    background-image: url(../../images/counter-1-1600x600.jpg);
+    background-image: url(../../images/counter-1-1600x600.webp);
     background-size: cover;
     color: #fff;
 }
@@ -222,6 +222,7 @@
     position: relative;
     overflow: hidden;
     box-shadow: 1px 10px 40px rgba(0, 0, 0, 0.4);
+    background: url(../../images/Background_Circle.png);
 }
 
 .contact-area .desc {
