@@ -516,7 +516,6 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu {
     font-size: 1.8em;
 }
 
-
 /* ---------------------------------
 4. SLIDER
 --------------------------------- */
@@ -558,7 +557,7 @@ footer:after {
     right: 0;
     z-index: -1;
     opacity: 0.8;
-    background: url(../../images/Background_Circle.png);
+    background: url(../images/Background_Circle.png);
 }
 
 footer ul > li > a {

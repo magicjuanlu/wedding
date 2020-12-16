@@ -6,47 +6,39 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charset="UTF-8" />
         <link rel="icon" href="favicon.png" type="image/x-icon" />
-
-        <!-- Font -->
         <link
             href="https://fonts.googleapis.com/css?family=Great+Vibes"
             rel="stylesheet"
         />
-
-        <!-- Stylesheets -->
         <link href="common-css/bootstrap.min.css" rel="stylesheet" />
-        <link href="common-css/font-icon.css" rel="stylesheet" />
-        <link href="common-css/main.css" rel="stylesheet" />
-        <link href="common-css/responsive.css" rel="stylesheet" />
+        <link href="common-css/font-icon-min.css" rel="stylesheet" />
+        <link href="common-css/main-min.css" rel="stylesheet" />
+        <link href="common-css/responsive-min.css" rel="stylesheet" />
         <link href="contact/css/styles.css" rel="stylesheet" />
+    </head>
     <body>
         <header>
             <div class="container">
-                <a class="logo" href="/"> Wedding </a>
-
+                <a class="logo" href="/">Wedding </a>
                 <div class="menu-nav-icon" data-nav-menu="#main-menu">
                     <i class="icon icon-bars"></i>
                 </div>
-
                 <ul class="main-menu visible-on-click" id="main-menu">
                     <li><a href="/">Inicio</a></li>
                     <li class="drop-down">
                         <a href="#!"
                             >La boda<i class="icon icon-caret-down"></i
                         ></a>
-
                         <ul class="drop-down-menu">
                             <li><a href="#">Ceremonia y banquete</a></li>
                             <li><a href="#">Viaje y alojamiento</a></li>
                         </ul>
                     </li>
-
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="contact.html">Contáctanos</a></li>
                 </ul>
             </div>
         </header>
-
         <div class="main-slider">
             <div class="display-table center-text">
                 <div class="display-table-cell">
@@ -57,7 +49,6 @@
                 </div>
             </div>
         </div>
-
         <section class="section contact-area">
             <div class="container">
                 <div class="row">
@@ -67,7 +58,6 @@
                                 <div class="heading">
                                     <h2 class="title">¿Alguna duda?</h2>
                                 </div>
-
                                 <p>
                                     ¿No estás segura de tu vestido? ¿Puedes
                                     llevar a los niños? ¿Alguna aclaración? Si
@@ -79,7 +69,6 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="col-sm-12 col-md-8 col-lg-6">
                         <div class="contact-form margin-bottom">
                             <div class="heading center-text">
@@ -92,8 +81,8 @@
                             >
                                 <div class="row">
                                     <div class="col-sm-12 margin-bottom">
-                                        <label for="name-input">Nombre</label>
-                                        <input
+                                        <label for="name-input">Nombre</label
+                                        ><input
                                             class="name-input"
                                             id="name-input"
                                             type="text"
@@ -102,8 +91,8 @@
                                         />
                                     </div>
                                     <div class="col-sm-12 margin-bottom">
-                                        <label for="-input">Apellidos</label>
-                                        <input
+                                        <label for="-input">Apellidos</label
+                                        ><input
                                             type="text"
                                             class="email-input"
                                             id="email-input"
@@ -114,8 +103,7 @@
                                     <div class="col-sm-12 margin-bottom">
                                         <label for="comment-input"
                                             >Comentario</label
-                                        >
-                                        <textarea
+                                        ><textarea
                                             id="comment-input"
                                             name="comentario"
                                             class="col-sm-12"
@@ -141,7 +129,6 @@
                 </div>
             </div>
         </section>
-
         <footer>
             <div class="container center-text">
                 <ul class="footer-links">
@@ -151,24 +138,20 @@
                     <li><a href="#">Blog</a></li>
                     <li><a href="#">Contáctanos</a></li>
                 </ul>
-
                 <p class="copyright">
-                    Copyright &copy;
-                    <span id="year"></span>
+                    Copyright &copy; <span id="year"></span>
                     <script>
                         document.getElementById(
                             'year'
                         ).innerHTML = new Date().getFullYear();
                     </script>
                     | Template from
-                    <a href="https://colorlib.com" target="_blank">Colorlib</a>
-                    adapted with
-                    <i class="icon-heart" aria-hidden="true"></i> by Juan Luis.
+                    <a href="https://colorlib.com" target="_blank">Colorlib</a
+                    >adapted with
+                    <i class="icon-heart" aria-hidden="true"></i>by Juan Luis.
                 </p>
             </div>
         </footer>
-
-        <!-- SCRIPTS -->
         <script
             src="https://www.google.com/recaptcha/api.js"
             async
