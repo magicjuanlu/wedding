@@ -17,6 +17,10 @@
 1. PRIMARY STYLES
 --------------------------------- */
 
+:root {
+    --main-color: #e45f74;
+}
+
 html {
     font-size: 100%;
     height: 100%;
@@ -24,6 +28,7 @@ html {
     margin: 0px;
     padding: 0px;
     touch-action: manipulation;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -119,7 +124,7 @@ button:active,
 button:hover,
 a b.light-color:hover {
     text-decoration: none;
-    color: #e45f74;
+    color: var(--main-color);
 }
 
 b {
@@ -169,13 +174,13 @@ b.light-color {
     padding: 15px 30px;
     border-radius: 1px;
     letter-spacing: 2px;
-    border: 1px solid #e45f74;
-    background: #e45f74;
+    border: 1px solid var(--main-color);
+    background: var(--main-color);
     color: #fff;
 }
 
 .btn:hover {
-    color: #e45f74;
+    color: var(--main-color);
     background: none;
 }
 
@@ -184,11 +189,11 @@ b.light-color {
     padding: 15px 30px;
     border-radius: 1px;
     letter-spacing: 2px;
-    border: 1px solid #e45f74;
+    border: 1px solid var(--main-color);
 }
 
 .btn-2:hover {
-    background: #e45f74;
+    background: var(--main-color);
     color: #fff;
 }
 
@@ -210,7 +215,7 @@ b.light-color {
     right: 0;
     height: 2px;
     transition: all 0.3s;
-    background: #e45f74;
+    background: var(--main-color);
 }
 
 .border-btn:before {
@@ -222,7 +227,7 @@ b.light-color {
     height: 2px;
     transform: translateX(-130%);
     transition: all 0.3s;
-    background: #e45f74;
+    background: var(--main-color);
 }
 
 .border-btn:hover:after {
@@ -244,7 +249,7 @@ b.light-color {
 .section .heading .icon {
     font-size: 18px;
     margin-top: 20px;
-    color: #e45f74;
+    color: var(--main-color);
 }
 
 .section .heading .icon.color-white {
@@ -330,64 +335,6 @@ b.light-color {
 :-moz-placeholder {
     font-size: 0.9em;
     letter-spacing: 1px;
-}
-
-/* JQUERY LIGHT BOX */
-
-#flavorOverlay {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    display: none;
-    background: rgba(0, 0, 0, 0.8);
-}
-
-#flavorLightbox {
-    display: none;
-}
-
-#flavorLightbox > img {
-    max-width: 90%;
-    max-height: 90%;
-    position: fixed;
-    top: 50px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 9999;
-}
-
-#flavorLightboxClose {
-    font-size: 32px;
-    cursor: pointer;
-    position: fixed;
-    top: 30px;
-    right: 30px;
-    z-index: 666;
-    color: #fff;
-}
-
-.thumbnails {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    z-index: 600;
-    position: relative;
-    cursor: pointer;
-    position: absolute;
-    bottom: 50px;
-    width: 90%;
-}
-
-.thumbnails img {
-    height: 50px;
-    margin: 1px;
-    transition: 0.3s;
-}
-
-.thumbnails img:hover {
-    border: 2px solid #fff;
 }
 
 /* ---------------------------------
@@ -483,11 +430,11 @@ header .main-menu li.drop-down > ul.drop-down-inner {
 /* DROPDOWN HOVER */
 
 header .main-menu > li > a:hover {
-    border-color: #e45f74;
+    border-color: var(--main-color);
 }
 
 header .main-menu li a.mouseover {
-    border-color: #e45f74;
+    border-color: var(--main-color);
 }
 
 header .main-menu li.drop-down a.mouseover + ul.drop-down-menu {
@@ -562,67 +509,6 @@ footer:after {
 
 footer ul > li > a {
     padding: 10px 15px;
-}
-
-footer .logo-wrapper .icon {
-    color: #e45f74;
-}
-
-footer .logo {
-    display: block;
-    width: 150px;
-    margin: 0 auto;
-    font-family: 'Great Vibes', cursive;
-    font-size: xx-large;
-}
-
-footer .newsletter {
-    margin: 20px 0;
-}
-
-footer .newsletter .title {
-    margin: 5px 0;
-}
-
-footer .newsletter .email-area {
-    position: relative;
-    width: 400px;
-    height: 55px;
-    margin: 20px auto;
-}
-
-footer .email-area .email-input {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    border: 0;
-    outline: 0;
-    border-radius: 100px;
-    padding: 0 70px 0 25px;
-    transition: all 0.2s;
-    box-shadow: 1px 10px 30px rgba(0, 0, 0, 0.2);
-}
-
-footer .email-area .email-input:focus {
-    box-shadow: 1px 15px 30px rgba(0, 0, 0, 0.3);
-}
-
-footer .email-area .submit-btn {
-    position: absolute;
-    right: 0;
-    height: 55px;
-    width: 55px;
-    line-height: 55px;
-    border-radius: 100px;
-    background: #e55d73;
-    color: #fff;
-}
-
-footer .email-area .submit-btn:hover {
-    background: #000;
-    color: #e55d73;
 }
 
 footer .copyright {

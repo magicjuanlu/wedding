@@ -15,7 +15,7 @@
 
 .main-slider {
     height: 100vh;
-    background-image: url(../../images/slider-1600x900.webp);
+    background-image: url(../images/slider-1600x900.webp);
     background-position: 71% center;
 }
 
@@ -42,7 +42,7 @@
 .slider-content .title i {
     transform: translateY(10px);
     font-size: 0.8em;
-    color: #e45f74;
+    color: var(--main-color);
 }
 
 /* ---------------------------------
@@ -63,7 +63,7 @@
     right: 0;
     z-index: -1;
     opacity: 0.8;
-    background: url(../../images/Background_Circle.png);
+    background: url(../images/Background_Circle.png);
 }
 
 /* ---------------------------------
@@ -73,7 +73,7 @@
 .counter-area {
     position: relative;
     z-index: 1;
-    background-image: url(../../images/counter-1-1600x600.webp);
+    background-image: url(../images/counter-1-1600x600.webp);
     background-size: cover;
     color: #fff;
 }
@@ -183,7 +183,7 @@
 .w-detail .icon {
     font-size: 3.5em;
     line-height: 1;
-    color: #e45f74;
+    color: var(--main-color);
 }
 
 /* ---------------------------------
@@ -193,7 +193,7 @@
 .w-ceremony-area {
     position: relative;
     z-index: 1;
-    background-image: url(../../images/counter-1-1600x600.webp);
+    background-image: url(../images/counter-1-1600x600.webp);
     background-size: cover;
     color: #fff;
 }
@@ -215,32 +215,18 @@
 }
 
 /* ---------------------------------
-9. CONTACT AREA
---------------------------------- */
-
-.contact-area {
-    position: relative;
-    overflow: hidden;
-    box-shadow: 1px 10px 40px rgba(0, 0, 0, 0.4);
-}
-
-.contact-area .desc {
-    margin-bottom: 15px;
-}
-
-/* ---------------------------------
 10. CEREMONY AREA
 --------------------------------- */
 
 .ceremony-area {
     display: flex;
     overflow: hidden;
-    background: url(../../images/Background_Circle.png);
+    background: url(../images/Background_Circle.png);
 }
 
 .ceremony-area .location {
     font-size: 1.6em;
-    color: #e45f74;
+    color: var(--main-color);
 }
 
 .map-area {
@@ -262,7 +248,7 @@
 .celebration-area > div {
     position: relative;
     z-index: 1;
-    background-image: url(../../images/vinedos.webp);
+    background-image: url(../images/vinedos.webp);
     background-size: cover;
     color: #fff;
 }
@@ -284,6 +270,99 @@
 
 .celebration-area .location {
     font-size: 1.6em;
+}
+
+/* ---------------------------------
+11. ASSISTANCE AREA
+--------------------------------- */
+
+.assistance-area {
+    /* position: relative;
+    z-index: 1; */
+}
+
+.assistance-area:after {
+    /* content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    opacity: 0.8;
+    background: url(../images/Background_Circle.png); */
+}
+
+/* ---------------------------------
+12. CONTACT AREA
+--------------------------------- */
+
+.contact-area {
+    position: relative;
+    z-index: 1;
+}
+
+.contact-area:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    opacity: 0.8;
+    background: url(../images/Background_Circle.png);
+}
+
+.contact-area .phone {
+    margin: 10px 0;
+    color: var(--main-color);
+}
+
+.contact-area .email {
+    margin: 10px 0;
+}
+
+/* ---------------------------------
+11. FORMS
+--------------------------------- */
+
+.contact-area .form,
+.assistance-area .form {
+    margin: auto;
+    padding: 50px 40px;
+    border-radius: 5px;
+    box-shadow: 1px 15px 40px rgba(0, 0, 0, 0.3);
+    background: #fff;
+}
+
+.form .pre-title {
+    margin: 10px 0;
+    color: var(--main-color);
+}
+
+.form input[type='text'] {
+    display: block;
+    width: 100%;
+}
+
+.form .margin-bottom {
+    margin-bottom: 20px;
+}
+
+.form input:not([type='radio']),
+.form select {
+    line-height: 45px;
+    height: 45px;
+    padding: 0 15px;
+}
+
+.form .btn {
+    padding: 0px 30px;
+    line-height: 43px;
+    height: 45px;
+    margin-top: 10px;
+    border-radius: 2px;
 }
 
 /* Screens Resolution : 767px
