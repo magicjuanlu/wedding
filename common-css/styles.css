@@ -62,7 +62,7 @@
     left: 0;
     right: 0;
     z-index: -1;
-    opacity: 0.8;
+    opacity: 0.5;
     background: url(../images/Background_Circle.png);
 }
 
@@ -73,8 +73,9 @@
 .counter-area {
     position: relative;
     z-index: 1;
-    background-image: url(../images/counter-1-1600x600.webp);
+    background-image: url(../images/countdown.jpg);
     background-size: cover;
+    background-position: 50%;
     color: #fff;
 }
 
@@ -110,6 +111,23 @@
 /* ---------------------------------
 7. WEDDING DETAILS AREA
 --------------------------------- */
+
+.w-details-area {
+    position: relative;
+    z-index: 1;
+}
+
+.w-details-area:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    opacity: 0.5;
+    background: url(../images/Background_Circle.png);
+}
 
 .wedding-details {
     overflow: hidden;
@@ -187,18 +205,40 @@
 }
 
 /* ---------------------------------
-8. WEDDING CEREMONY
+8. BUSES AREA
 --------------------------------- */
 
-.w-ceremony-area {
+.buses-area {
     position: relative;
     z-index: 1;
-    background-image: url(../images/counter-1-1600x600.webp);
-    background-size: cover;
-    color: #fff;
 }
 
-.w-ceremony-area:after {
+.buses-area:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    opacity: 0.5;
+    background: url(../images/Background_Circle.png);
+}
+
+/* ---------------------------------
+9. ACCOMMODATION AREA
+--------------------------------- */
+
+.accommodation-area {
+    position: relative;
+    z-index: 1;
+    background-image: url(../images/bedroom.jpg);
+    background-size: cover;
+    color: #fff;
+    background-position: 50% 55%;
+}
+
+.accommodation-area:after {
     content: '';
     position: absolute;
     top: 0;
@@ -209,7 +249,7 @@
     background: rgba(0, 0, 0, 0.3);
 }
 
-.w-ceremony .desc {
+.accommodation .desc {
     margin-bottom: 15px;
     color: #fff;
 }
@@ -221,6 +261,19 @@
 .ceremony-area {
     display: flex;
     overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.ceremony-area:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    opacity: 0.5;
     background: url(../images/Background_Circle.png);
 }
 
@@ -250,6 +303,7 @@
     z-index: 1;
     background-image: url(../images/vinedos.webp);
     background-size: cover;
+    background-position: 20% 50%;
     color: #fff;
 }
 
@@ -273,24 +327,32 @@
 }
 
 /* ---------------------------------
-11. ASSISTANCE AREA
+11. ATTENDANCE AREA
 --------------------------------- */
 
-.assistance-area {
-    /* position: relative;
-    z-index: 1; */
+.attendance-area {
+    position: relative;
+    z-index: 1;
+    background-image: url(../images/friends.jpg);
+    background-size: cover;
+    color: #fff;
+    background-position: 50% 55%;
 }
 
-.assistance-area:after {
-    /* content: '';
+.attendance-area:after {
+    content: '';
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     z-index: -1;
-    opacity: 0.8;
-    background: url(../images/Background_Circle.png); */
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.attendance .desc {
+    margin-bottom: 15px;
+    color: #fff;
 }
 
 /* ---------------------------------
@@ -310,7 +372,7 @@
     left: 0;
     right: 0;
     z-index: -1;
-    opacity: 0.8;
+    opacity: 0.5;
     background: url(../images/Background_Circle.png);
 }
 
@@ -328,12 +390,13 @@
 --------------------------------- */
 
 .contact-area .form,
-.assistance-area .form {
+.attendance-area .form {
     margin: auto;
     padding: 50px 40px;
     border-radius: 5px;
     box-shadow: 1px 15px 40px rgba(0, 0, 0, 0.3);
     background: #fff;
+    color: #333;
 }
 
 .form .pre-title {

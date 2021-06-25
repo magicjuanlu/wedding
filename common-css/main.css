@@ -161,6 +161,16 @@ b.light-color {
     line-height: inherit;
 }
 
+.icon-svg {
+    height: 4em;
+    width: auto;
+}
+
+.icon-svg-small {
+    height: 1.5em;
+    width: auto;
+}
+
 [class^='icon-']:before,
 [class*=' icon-']:before {
     line-height: inherit;
