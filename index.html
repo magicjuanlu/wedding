@@ -13,11 +13,16 @@
         <link href="common-css/bootstrap.min.css" rel="stylesheet" />
         <link href="common-css/main-min.css" rel="stylesheet" />
         <link href="common-css/styles-min.css" rel="stylesheet" />
+        <script type="text/javascript">
+            var onloadCallback = function () {
+                grecaptcha.render('captcha', { sitekey: '6Lc1UP4ZAAAAADB3dNRZIwH_Jbx6gp7TGsxDiRQB' });
+            };
+        </script>
     </head>
     <body>
         <header>
             <div class="container">
-                <a class="logo" href="/">JL &nbsp; & &nbsp;  P </a>
+                <a class="logo" href="/">JL &nbsp; & &nbsp; P </a>
                 <div class="menu-nav-icon" data-nav-menu="#main-menu">
                     <i class="icon icon-bars"></i>
                 </div>
@@ -106,7 +111,9 @@
                                 <span class="heading-bottom"><i class="icon icon-ciurclke"></i></span>
                             </div>
                             <div class="margin-bottom">
-                                <p class="location"><a href="https://www.parroquiasantateresatoledo.es/" target="_blank">Iglesia Santa Teresa</a></p>
+                                <p class="location">
+                                    <a href="https://www.parroquiasantateresatoledo.es/" target="_blank">Iglesia Santa Teresa</a>
+                                </p>
                                 <p>Ronda Buenavista, 51</p>
                                 <p>45005 Toledo</p>
                             </div>
@@ -138,7 +145,9 @@
                                 <span class="heading-bottom"><i class="color-white icon icon-wine-glass"></i></span>
                             </div>
                             <div class="margin-bottom">
-                                <p class="location"><a href="https://cigarralsantamaria.com/" target="_blank">Viñedos Cigarral Santa María</a></p>
+                                <p class="location">
+                                    <a href="https://cigarralsantamaria.com/" target="_blank">Viñedos Cigarral Santa María</a>
+                                </p>
                                 <p>Cerro del Emperador, S/N</p>
                                 <p>45002 Toledo</p>
                             </div>
@@ -207,21 +216,23 @@
                         <div class="accommodation margin-bottom">
                             <p class="desc">
                                 Para aquellos que necesiten alojamiento, los siguientes hoteles nos han proporcionado códigos de descuento para
-                                la boda. No dudéis mirar en <a href="https://www.booking.com/" target="_blank" style="color: var(--main-color)">Booking</a>
+                                la boda. No dudéis mirar en
+                                <a href="https://www.booking.com/" target="_blank" style="color: var(--main-color)">Booking</a>
                                 para comparar precios.
                             </p>
                             <div class="hotels">
-                                    <div class="hotel">
-                                        <a class="location" href="https://www.hotelcigarrales.com" target="_blank" >Hotel Los Cigarrales</a> 
-                                        <div>**</div>
-                                        12% de descuento con el código XXXXXXX a través de reservas en su web.  
-                                    </div>
-                                    <div class="hotel">
-                                        <a class="location" href="https://www.eurostarshotels.com/eurostars-palacio-buenavista.html" target="_blank" >Eurostars Toledo Palacio Buenavista</a>
-                                        <div>*****</div>
-                                        10% de descuento indicando que vais a nuestra boda a través del siguiente correo electrónico: 
-                                        <a href="mailto:eventos3@eurostarspalaciobuenavista.com">eventos3@eurostarspalaciobuenavista.com</a>
-                                    </div>
+                                <div class="hotel">
+                                    <a class="location" href="https://www.hotelcigarrales.com" target="_blank">Hotel Los Cigarrales</a>
+                                    <div>**</div>
+                                    12% de descuento con el código XXXXXXX a través de reservas en su web.
+                                </div>
+                                <div class="hotel">
+                                    <a class="location" href="https://www.eurostarshotels.com/eurostars-palacio-buenavista.html" target="_blank"
+                                        >Eurostars Toledo Palacio Buenavista</a
+                                    >
+                                    <div>*****</div>
+                                    10% de descuento indicando que vais a nuestra boda a través del siguiente correo electrónico:
+                                    <a href="mailto:eventos3@eurostarspalaciobuenavista.com">eventos3@eurostarspalaciobuenavista.com</a>
                                 </div>
                             </div>
                         </div>
@@ -261,8 +272,8 @@
                         </div>
                         <div class="attendance margin-bottom">
                             <p class="desc">
-                                Indica a continuación si asistirás a la boda, cuántos iréis, si harás uso del servicio de autobuses y si tienes alguna alergia,
-                                intolerancia o particularidad con respecto a la comida
+                                Indica a continuación si asistirás a la boda, cuántos iréis, si harás uso del servicio de autobuses y si tienes
+                                alguna alergia, intolerancia o particularidad con respecto a la comida
                             </p>
                         </div>
                     </div>
@@ -277,7 +288,7 @@
                                 <input type="text" class="col-sm-12" id="apellidos" name="apellidos" maxlength="100" required />
                             </div>
                             <div class="col-sm-12">
-                                <label>¿Asistirás a la boda?</label><br>
+                                <label>¿Asistirás a la boda?</label><br />
                                 <input type="radio" id="asistencia-si" name="asistencia" value="si" required />
                                 <label for="asistencia-si">Si</label>
                                 <input type="radio" id="asistencia-no" name="asistencia" value="no" />
@@ -288,7 +299,7 @@
                                 <input type="number" class="col-sm-12" id="numero" name="numero" required min="0" max="5" />
                             </div>
                             <div class="col-sm-12">
-                                <label>¿Utilizarás el servicio de autobuses?</label><br>
+                                <label>¿Utilizarás el servicio de autobuses?</label><br />
                                 <input type="radio" id="autobus-si" name="autobus" value="si" required />
                                 <label for="autobus-si">Si</label>
                                 <input type="radio" id="autobus-no" name="autobus" value="no" />
@@ -340,11 +351,16 @@
                                 </div>
                                 <div class="col-sm-12 margin-bottom">
                                     <label for="comment-input">Comentario</label>
-                                    <textarea id="comment-input" name="comentario" class="col-sm-12" rows="4" maxlength="400" required ></textarea>
+                                    <textarea
+                                        id="comment-input"
+                                        name="comentario"
+                                        class="col-sm-12"
+                                        rows="4"
+                                        maxlength="400"
+                                        required
+                                    ></textarea>
                                 </div>
-                                <div class="col-sm-12 margin-bottom">
-                                    <div class="g-recaptcha" data-sitekey="6Lc1UP4ZAAAAADB3dNRZIwH_Jbx6gp7TGsxDiRQB"></div>
-                                </div>
+                                <div id="captcha" class="col-sm-12 margin-bottom"></div>
                                 <div class="col-sm-12 center-text">
                                     <button class="btn" type="submit">
                                         <b>Enviar comentario</b>
@@ -381,6 +397,6 @@
         <script async src="js/lazysizes.min.js"></script>
         <script defer src="js/scripts.js"></script>
         <script defer src="js/countdown.js"></script>
-        <script async defer src="https://www.google.com/recaptcha/api.js"></script>
+        <script async defer src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"></script>
     </body>
 </html>
