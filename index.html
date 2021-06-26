@@ -13,13 +13,13 @@
         <link href="common-css/bootstrap.min.css" rel="stylesheet" />
         <link href="common-css/main-min.css" rel="stylesheet" />
         <link href="common-css/responsive-min.css" rel="stylesheet" />
-        <link href="common-css/styles-min.css" rel="stylesheet" />
+        <link href="common-css/styles.css" rel="stylesheet" />
         <script async defer src="https://www.google.com/recaptcha/api.js"></script>
     </head>
     <body>
         <header>
             <div class="container">
-                <a class="logo" href="/">JL &nbsp; & &nbsp; P </a>
+                <a class="logo" href="/">JL &nbsp; & &nbsp;  P </a>
                 <div class="menu-nav-icon" data-nav-menu="#main-menu">
                     <i class="icon icon-bars"></i>
                 </div>
@@ -44,7 +44,7 @@
             <div class="display-table center-text">
                 <div class="display-table-cell">
                     <div class="slider-content">
-                        <h1 class="title">Juan Luis <i class="icon icon-heart"></i>Patricia</h1>
+                        <h1 class="title">Juan Luis&nbsp;<i class="icon icon-heart"></i>&nbsp;Patricia</h1>
                         <h5 class="date">28 Agosto 2021</h5>
                         <h3 class="pre-title">Toledo</h3>
                     </div>
@@ -108,7 +108,7 @@
                                 <span class="heading-bottom"><i class="icon icon-ciurclke"></i></span>
                             </div>
                             <div class="margin-bottom">
-                                <p class="location">Iglesia Santa Teresa</p>
+                                <p class="location"><a href="https://www.parroquiasantateresatoledo.es/" target="_blank">Iglesia Santa Teresa</a></p>
                                 <p>Ronda Buenavista, 51</p>
                                 <p>45005 Toledo</p>
                             </div>
@@ -140,7 +140,7 @@
                                 <span class="heading-bottom"><i class="color-white icon icon-wine-glass"></i></span>
                             </div>
                             <div class="margin-bottom">
-                                <p class="location">Viñedos Cigarral Santa María</p>
+                                <p class="location"><a href="https://cigarralsantamaria.com/" target="_blank">Viñedos Cigarral Santa María</a></p>
                                 <p>Cerro del Emperador, S/N</p>
                                 <p>45002 Toledo</p>
                             </div>
@@ -169,7 +169,7 @@
                     <div class="col-sm-10">
                         <div class="heading">
                             <h2 class="title">Detalles de la boda</h2>
-                            <span class="heading-bottom"><i class="icon icon-star"></i></span>
+                            <span class="heading-bottom"><i class="icon icon-heart"></i></span>
                         </div>
                         <div class="wedding-details margin-bottom">
                             <div class="w-detail right">
@@ -200,13 +200,32 @@
         <section id="alojamiento" class="section accommodation-area center-text">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-12">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-10">
                         <div class="heading">
                             <h2 class="title">Alojamiento</h2>
                             <span class="heading-bottom"><i class="color-white icon icon-home"></i></span>
                         </div>
                         <div class="accommodation margin-bottom">
-                            <p class="desc">Completar</p>
+                            <p class="desc">
+                                Para aquellos que necesiten alojamiento, los siguientes hoteles nos han proporcionado códigos de descuento para
+                                la boda. No dudéis mirar en <a href="https://www.booking.com/" target="_blank" style="color: var(--main-color)">Booking</a>
+                                para comparar precios.
+                            </p>
+                            <div class="hotels">
+                                    <div class="hotel">
+                                        <a class="location" href="https://www.hotelcigarrales.com" target="_blank" >Hotel Los Cigarrales</a> 
+                                        <div>**</div>
+                                        12% de descuento con el código XXXXXXX a través de reservas en su web.  
+                                    </div>
+                                    <div class="hotel">
+                                        <a class="location" href="https://www.eurostarshotels.com/eurostars-palacio-buenavista.html" target="_blank" >Eurostars Toledo Palacio Buenavista</a>
+                                        <div>*****</div>
+                                        10% de descuento indicando que vais a nuestra boda a través del siguiente correo electrónico: 
+                                        <a href="mailto:eventos3@eurostarspalaciobuenavista.com">eventos3@eurostarspalaciobuenavista.com</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -215,14 +234,19 @@
         <section id="autobuses" class="section buses-area center-text">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-12">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-10">
                         <div class="heading">
                             <h2 class="title">Autobuses</h2>
                             <span class="heading-bottom"> <img src="images/bus.svg" class="icon-svg-small" /> </span>
                         </div>
                         <div class="buses margin-bottom">
-                            <p class="desc">Completar</p>
-                            <!-- <a class="border-btn" href="#">LEARN MORE</a> -->
+                            <p class="desc">
+                                Se proporcionará servicio de autobuses, tanto para ir de la iglesia al cigarral, como desde el cigarral a Toledo.
+                                Habrá varios turnos para la vuelta del cigarral a Toledo que pararán en diferentes puntos de la ciudad,
+                                incluyendo la iglesia. Si quieres hacer uso de este servicio ¡no olvides indicarlo a través de la
+                                <a href="#asistencia" style="color: var(--main-color)">confirmación de asistencia</a>!
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -231,14 +255,15 @@
         <section id="asistencia" class="section attendance-area">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-12 center-text">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-10 center-text">
                         <div class="heading">
                             <h2 class="title">Confirma tu asistencia</h2>
-                            <span class="heading-bottom"><i class="icon color-white icon-home"></i></span>
+                            <span class="heading-bottom"><i class="icon color-white icon-star"></i></span>
                         </div>
                         <div class="attendance margin-bottom">
                             <p class="desc">
-                                Indica a continuación si asistirás a la boda, si harás uso del servicio de autobuses y si tienes alguna alergia,
+                                Indica a continuación si asistirás a la boda, cuántos iréis, si harás uso del servicio de autobuses y si tienes alguna alergia,
                                 intolerancia o particularidad con respecto a la comida
                             </p>
                         </div>
@@ -247,33 +272,33 @@
                         <form action="https://formspree.io/f/xrgrlgqz" method="POST">
                             <div class="col-sm-12 margin-bottom">
                                 <label for="nombre">Nombre</label>
-                                <input type="text" class="col-sm-12" id="nombre" name="nombre" required />
+                                <input type="text" class="col-sm-12" id="nombre" name="nombre" maxlength="100" required />
                             </div>
                             <div class="col-sm-12 margin-bottom">
                                 <label for="apellidos">Apellidos</label>
-                                <input type="text" class="col-sm-12" id="apellidos" name="apellidos" required />
+                                <input type="text" class="col-sm-12" id="apellidos" name="apellidos" maxlength="100" required />
                             </div>
-                            <div class="col-sm-12 margin-bottom">
-                                <div>¿Asistirás a la boda?</div>
+                            <div class="col-sm-12">
+                                <label>¿Asistirás a la boda?</label><br>
                                 <input type="radio" id="asistencia-si" name="asistencia" value="si" required />
-                                <label for="asistencia-si">Si</label><br />
+                                <label for="asistencia-si">Si</label>
                                 <input type="radio" id="asistencia-no" name="asistencia" value="no" />
-                                <label for="asistencia-no">No</label><br />
+                                <label for="asistencia-no">No</label>
                             </div>
                             <div class="col-sm-12 margin-bottom">
                                 <label for="numero">Número de asistentes</label>
                                 <input type="number" class="col-sm-12" id="numero" name="numero" required min="0" max="5" />
                             </div>
-                            <div class="col-sm-12 margin-bottom">
-                                <div>¿Utilizarás el servicio de autobuses?</div>
+                            <div class="col-sm-12">
+                                <label>¿Utilizarás el servicio de autobuses?</label><br>
                                 <input type="radio" id="autobus-si" name="autobus" value="si" required />
-                                <label for="autobus-si">Si</label><br />
+                                <label for="autobus-si">Si</label>
                                 <input type="radio" id="autobus-no" name="autobus" value="no" />
-                                <label for="autobus-no">No</label><br />
+                                <label for="autobus-no">No</label>
                             </div>
                             <div class="col-sm-12 margin-bottom">
                                 <label for="particularidades">Alergias, intolerancias o particularidades (opcional)</label>
-                                <textarea id="particularidades" class="col-sm-12" name="particularidades" rows="4"></textarea>
+                                <textarea id="particularidades" class="col-sm-12" name="particularidades" rows="2" maxlength="200"></textarea>
                             </div>
                             <div class="col-sm-12 margin-bottom">
                                 <div class="g-recaptcha" data-sitekey="6Lc1UP4ZAAAAADB3dNRZIwH_Jbx6gp7TGsxDiRQB"></div>
@@ -288,10 +313,11 @@
                 </div>
             </div>
         </section>
-        <section id="contacto" class="section contact-area center-text">
+        <section id="contacto" class="section contact-area">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-12">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-10 center-text">
                         <div class="heading">
                             <h2 class="title">Contáctanos</h2>
                             <span class="heading-bottom"><i class="icon icon-email-plane"></i></span>
@@ -301,9 +327,6 @@
                                 Si tienes cualquier pregunta para nosotros o nos quieres comentar algo, ponlo aquí y nos llegará directamente a
                                 nuestro mail. ¡Gracias por tu mensaje!
                             </p>
-                            <!-- <a class="border-btn" href="contact.html"
-                                >Contáctanos</a
-                            > -->
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-8 col-lg-6 form margin-bottom">
@@ -311,15 +334,15 @@
                             <div class="row">
                                 <div class="col-sm-12 margin-bottom">
                                     <label for="name-input">Nombre</label>
-                                    <input class="name-input" id="name-input" type="text" name="nombre" required />
+                                    <input class="name-input" id="name-input" type="text" name="nombre" maxlength="100" required />
                                 </div>
                                 <div class="col-sm-12 margin-bottom">
                                     <label for="-input">Apellidos</label>
-                                    <input type="text" class="email-input" id="email-input" name="apellidos" required />
+                                    <input type="text" class="email-input" id="email-input" name="apellidos" maxlength="100" required />
                                 </div>
                                 <div class="col-sm-12 margin-bottom">
                                     <label for="comment-input">Comentario</label>
-                                    <textarea id="comment-input" name="comentario" class="col-sm-12" rows="4" required></textarea>
+                                    <textarea id="comment-input" name="comentario" class="col-sm-12" rows="4" maxlength="400" required ></textarea>
                                 </div>
                                 <div class="col-sm-12 margin-bottom">
                                     <div class="g-recaptcha" data-sitekey="6Lc1UP4ZAAAAADB3dNRZIwH_Jbx6gp7TGsxDiRQB"></div>
