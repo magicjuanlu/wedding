@@ -58,7 +58,7 @@
 .counter-area {
     position: relative;
     z-index: 1;
-    background-image: url(../images/countdown.webp);
+    background-image: url(../images/toledo.jpg);
     background-size: cover;
     background-position: 50%;
     color: #fff;
@@ -193,12 +193,12 @@
 8. BUSES AREA
 --------------------------------- */
 
-.buses-area {
+.circle-area {
     position: relative;
     z-index: 1;
 }
 
-.buses-area:after {
+.circle-area:after {
     content: '';
     position: absolute;
     top: 0;
@@ -239,23 +239,28 @@
     color: #fff;
 }
 
-.hotels, .buses-container {
+.flex {
     display: flex;
 }
 
-.hotel, .bus {
+.flex-container {
+    display: flex;
+}
+
+.flex-content, .flex-content-fixed {
     width: 50%;
     margin: 2em auto;
 }
 
-.bus {
-
+.accommodation .flex-content .location { 
+    color: white !important;
+    margin-bottom: 0.5em;
 }
 
-.bus .location {
+.flex-content .location, .flex-content-fixed .location {
     color: var(--main-color) !important;
     margin-bottom: 0.5em;
-} 
+}
 
 /* ---------------------------------
 10. CEREMONY AREA
@@ -303,7 +308,7 @@
 .celebration-area > div {
     position: relative;
     z-index: 1;
-    background-image: url(../images/vinedos.webp);
+    background-image: url(../images/vinedo-2.png);
     background-size: cover;
     background-position: 20% 50%;
     color: #fff;
@@ -438,12 +443,16 @@ textarea {
     margin-left: 3em;
 }
 
+.phone {
+    margin: 0.4em auto;
+}
+
 /* Screens Resolution : 767px
 -------------------------------------------------------------------------- */
 @media only screen and (max-width: 767px) {
     .ceremony-area,
     .celebration-area,
-    .hotels, .buses-container {
+    .flex-container {
         display: inherit;
     }
     .map-area {
@@ -454,7 +463,7 @@ textarea {
         margin-bottom: 3em;
     }
 
-    .hotel, .bus {
+    .flex-content {
         width: 100%;
     }
 

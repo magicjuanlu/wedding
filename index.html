@@ -216,19 +216,20 @@
                         <div class="accommodation margin-bottom">
                             <p class="desc">
                                 Para aquellos que necesiten alojamiento, los siguientes hoteles nos han proporcionado códigos de descuento para
-                                la boda. 
-                                <br> Os recomendamos contrastar en diferentes páginas para comparar precios.
+                                la boda.
+                                <br />
+                                Os recomendamos contrastar en diferentes páginas para comparar precios.
                             </p>
-                            <div class="hotels">
-                                <div class="hotel">
+                            <div class="flex-container">
+                                <div class="flex-content">
                                     <a class="location" href="https://www.hotelcigarrales.com" target="_blank">Hotel Los Cigarrales</a>
                                     <div>**</div>
                                     12% de descuento con el código <b>BODAPTJL28082021</b> para reservas que se realicen exclusivamente a través
                                     de su
                                     <a style="text-decoration: underline" href="https://www.hotelcigarrales.com" target="_blank">página web</a>.
-                                    <br>Descuento válido para los días 27, 28 y 29 de agosto.
+                                    <br />Descuento válido para los días 27, 28 y 29 de agosto.
                                 </div>
-                                <div class="hotel">
+                                <div class="flex-content">
                                     <a class="location" href="https://www.eurostarshotels.com/eurostars-palacio-buenavista.html" target="_blank"
                                         >Eurostars Toledo Palacio Buenavista</a
                                     >
@@ -244,7 +245,7 @@
                 </div>
             </div>
         </section>
-        <section id="autobuses" class="section buses-area center-text">
+        <section id="autobuses" class="section circle-area center-text">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-1"></div>
@@ -253,23 +254,23 @@
                             <h2 class="title">Autobuses</h2>
                             <span class="heading-bottom"> <img src="images/bus.svg" class="icon-svg-small" /> </span>
                         </div>
-                        <div class="buses margin-bottom">
+                        <div class="margin-bottom">
                             <p class="desc">Se proporcionará servicio de autobuses con los siguientes desplazamientos.</p>
-                            <div class="buses-container">
-                                <div class="bus">
+                            <div class="flex-container">
+                                <div class="flex-content">
                                     <a class="location">Iglesia - Cigarral</a>
-                                    <div>Una vez acabada la ceremonia los autobuses esperarán en la salida de la iglesia</div>
+                                    <div>Los autobuses esperarán en la salida de la iglesia una vez acabada la ceremonia.</div>
                                 </div>
-                                <div class="bus">
+                                <div class="flex-content">
                                     <a class="location">Cigarral - Toledo</a>
                                     <div>
-                                        Habrá varios turnos para la vuelta a Toledo que pararán en diferentes puntos
-                                        de la ciudad, incluyendo la iglesia.
+                                        Habrá varios turnos para la vuelta a Toledo que pararán en diferentes puntos de la ciudad, incluyendo la
+                                        iglesia.
                                     </div>
                                 </div>
                             </div>
                             <p>
-                                Si quieres hacer uso de este servicio ¡no olvides indicarlo a través de la
+                                Si quieres hacer uso de este servicio, ¡no olvides indicarlo a través de la
                                 <a href="#asistencia" style="color: var(--main-color)">confirmación de asistencia</a>!
                             </p>
                         </div>
@@ -295,45 +296,85 @@
                     </div>
                     <div class="col-sm-12 col-md-8 col-lg-6 form margin-bottom">
                         <form action="https://formspree.io/f/xrgrlgqz" method="POST">
-                            <div class="col-sm-12 margin-bottom">
-                                <label for="nombre">Nombre</label>
-                                <input type="text" class="col-sm-12" id="nombre" name="nombre" maxlength="100" required />
-                            </div>
-                            <div class="col-sm-12 margin-bottom">
-                                <label for="apellidos">Apellidos</label>
-                                <input type="text" class="col-sm-12" id="apellidos" name="apellidos" maxlength="100" required />
-                            </div>
-                            <div class="col-sm-12">
-                                <label>¿Asistirás a la boda?</label><br />
-                                <input type="radio" id="asistencia-si" name="asistencia" value="si" required />
-                                <label for="asistencia-si">Si</label>
-                                <input type="radio" id="asistencia-no" name="asistencia" value="no" class="second-option-radio" />
-                                <label for="asistencia-no">No</label>
-                            </div>
-                            <div class="col-sm-12 margin-bottom">
-                                <label for="numero">Número de asistentes</label>
-                                <input type="number" class="col-sm-12" id="numero" name="numero" required min="0" max="5" />
-                            </div>
-                            <div class="col-sm-12">
-                                <label>¿Utilizarás el servicio de autobuses?</label><br />
-                                <input type="radio" id="autobus-si" name="autobus" value="si" required />
-                                <label for="autobus-si">Si</label>
-                                <input type="radio" id="autobus-no" name="autobus" value="no" class="second-option-radio" />
-                                <label for="autobus-no">No</label>
-                            </div>
-                            <div class="col-sm-12 margin-bottom">
-                                <label for="particularidades">Alergias, intolerancias o particularidades (opcional)</label>
-                                <textarea id="particularidades" class="col-sm-12" name="particularidades" rows="2" maxlength="200"></textarea>
-                            </div>
-                            <div class="col-sm-12 margin-bottom">
-                                <div class="g-recaptcha" data-sitekey="6Lc1UP4ZAAAAADB3dNRZIwH_Jbx6gp7TGsxDiRQB"></div>
-                            </div>
-                            <div class="col-sm-12 center-text">
-                                <button class="btn" type="submit">
-                                    <b>Enviar</b>
-                                </button>
+                            <div class="row">
+                                <div class="col-sm-12 margin-bottom">
+                                    <label for="nombre">Nombre</label>
+                                    <input type="text" class="col-sm-12" id="nombre" name="nombre" maxlength="100" required />
+                                </div>
+                                <div class="col-sm-12 margin-bottom">
+                                    <label for="apellidos">Apellidos</label>
+                                    <input type="text" class="col-sm-12" id="apellidos" name="apellidos" maxlength="100" required />
+                                </div>
+                                <div class="col-sm-12">
+                                    <label>¿Asistirás a la boda?</label><br />
+                                    <input type="radio" id="asistencia-si" name="asistencia" value="si" required />
+                                    <label for="asistencia-si">Si</label>
+                                    <input type="radio" id="asistencia-no" name="asistencia" value="no" class="second-option-radio" />
+                                    <label for="asistencia-no">No</label>
+                                </div>
+                                <div class="col-sm-12 margin-bottom">
+                                    <label for="numero">Número de asistentes</label>
+                                    <input type="number" class="col-sm-12" id="numero" name="numero" required min="0" max="5" />
+                                </div>
+                                <div class="col-sm-12">
+                                    <label>¿Utilizarás el servicio de autobuses?</label><br />
+                                    <input type="radio" id="autobus-si" name="autobus" value="si" required />
+                                    <label for="autobus-si">Si</label>
+                                    <input type="radio" id="autobus-no" name="autobus" value="no" class="second-option-radio" />
+                                    <label for="autobus-no">No</label>
+                                </div>
+                                <div class="col-sm-12 margin-bottom">
+                                    <label for="particularidades">Alergias, intolerancias o particularidades (opcional)</label>
+                                    <textarea
+                                        id="particularidades"
+                                        class="col-sm-12"
+                                        name="particularidades"
+                                        rows="2"
+                                        maxlength="200"
+                                    ></textarea>
+                                </div>
+                                <div class="col-sm-12 margin-bottom">
+                                    <div class="g-recaptcha" data-sitekey="6Lc1UP4ZAAAAADB3dNRZIwH_Jbx6gp7TGsxDiRQB"></div>
+                                </div>
+                                <div class="col-sm-12 center-text">
+                                    <button class="btn" type="submit">
+                                        <b>Enviar</b>
+                                    </button>
+                                </div>
                             </div>
                         </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section circle-area center-text">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-10">
+                        <div class="heading">
+                            <h2 class="title">¿Quieres tener un detalle?</h2>
+                            <span class="heading-bottom"><i class="icon icon-home"></i></span>
+                        </div>
+                        <div class="margin-bottom">
+                            <p class="desc">
+                                Nuestro mejor regalo será que nos acompañéis en este día tan importante para nosotros. Si aún así queréis
+                                participar en el inicio de esta nueva etapa de nuestra vida y puesto que sois muchos los que lo habéis
+                                solicitado, aquí os dejamos nuestra cuenta.
+                            </p>
+                            <div class="flex">
+                                <div class="flex-content-fixed">
+                                    <a class="location">Juan Luis</a>
+                                    <div class="phone">630419135</div>
+                                    <span class="heading-bottom"> <img src="images/bizum.svg" class="icon-svg-small" /> </span>
+                                </div>
+                                <div class="flex-content-fixed">
+                                    <a class="location">Patricia</a>
+                                    <div class="phone">697798431</div>
+                                    <span class="heading-bottom"> <img src="images/bizum.svg" class="icon-svg-small" /> </span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
