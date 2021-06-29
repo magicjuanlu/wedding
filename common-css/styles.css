@@ -378,7 +378,9 @@
 .contact-area {
     position: relative;
     z-index: 1;
-    background-image: url(../images/estampado-verde.jpg);
+    background-image: url(../images/pen.jpg);
+    background-size: cover;
+    background-position: 25% 48%;
     color: #fff;
 }
 
