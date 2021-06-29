@@ -27,7 +27,7 @@
 .slider-content .title i {
     transform: translateY(10px);
     font-size: 0.8em;
-    color: var(--main-color);
+    color: var(--red-color);
 }
 
 /* ---------------------------------
@@ -429,8 +429,7 @@ textarea {
     border-radius: 2px;
 }
 
-input#asistencia-no,
-input#autobus-no {
+.second-option-radio {
     margin-left: 3em;
 }
 

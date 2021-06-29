@@ -18,7 +18,8 @@
 --------------------------------- */
 
 :root {
-    --main-color: #e45f74;
+    --main-color: rgb(0, 134, 58);
+    --red-color: #e45f74;
 }
 
 html {
@@ -387,6 +388,7 @@ header .main-menu > li > a {
     border-radius: 2px;
     background: transparent;
     text-transform: uppercase;
+    color: #fff;
 }
 
 header .visible.main-menu {
@@ -407,7 +409,7 @@ header .main-menu li.drop-down > ul.drop-down-menu {
     left: 0;
     min-width: 200px;
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
-    background: #333;
+    background: rgb(150, 150, 150);
 }
 
 header .main-menu li.drop-down > ul.drop-down-menu li {
@@ -440,11 +442,11 @@ header .main-menu li.drop-down > ul.drop-down-inner {
 /* DROPDOWN HOVER */
 
 header .main-menu > li > a:hover {
-    border-color: var(--main-color);
+    border-color: #fff;
 }
 
 header .main-menu li a.mouseover {
-    border-color: var(--main-color);
+    border-color: #fff;
 }
 
 header .main-menu li.drop-down a.mouseover + ul.drop-down-menu {

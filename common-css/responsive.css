@@ -1,9 +1,4 @@
-/* Screens Resolution : 992px
--------------------------------------------------------------------------- */
 @media only screen and (max-width: 992px) {
-    /* ---------------------------------
-	1. PRIMARY STYLES
-	--------------------------------- */
 
     h1 {
         font-size: 4em;
@@ -15,13 +10,8 @@
         font-size: 2em;
     }
 
-    /* ---------------------------------
-	3. MENU
-	--------------------------------- */
 }
 
-/* Screens Resolution : 767px
--------------------------------------------------------------------------- */
 @media only screen and (max-width: 767px) {
     /* ---------------------------------
 	1. PRIMARY STYLES
@@ -82,7 +72,7 @@
         max-height: 400px;
         overflow: auto;
         border-top: 1px solid #ccc;
-        background: #333;
+        background: rgb(150, 150, 150);
     }
 
     header .main-menu > li {
@@ -141,8 +131,6 @@
     }
 }
 
-/* Screens Resolution : 479px
--------------------------------------------------------------------------- */
 @media only screen and (max-width: 479px) {
     body {
         font-size: 14px;
