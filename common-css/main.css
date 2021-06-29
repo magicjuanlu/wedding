@@ -128,10 +128,6 @@ a b.light-color:hover {
     color: var(--main-color);
 }
 
-b {
-    font-weight: 500;
-}
-
 img {
     width: 100%;
 }
@@ -370,6 +366,10 @@ header .logo {
     height: 40px;
     font-family: 'Great Vibes', cursive;
     font-size: xx-large;
+}
+
+header .logo:hover {
+    color: #fff;
 }
 
 /* BOTTOM AREA */
