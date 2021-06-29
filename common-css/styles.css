@@ -58,7 +58,7 @@
 .counter-area {
     position: relative;
     z-index: 1;
-    background-image: url(../images/toledo.jpg);
+    background-image: url(../images/toledo.webp);
     background-size: cover;
     background-position: 50% 29%;
     color: #fff;
@@ -312,7 +312,7 @@
 .celebration-area > div {
     position: relative;
     z-index: 1;
-    background-image: url(../images/vinedo-2.png);
+    background-image: url(../images/vinedo-2.webp);
     background-size: cover;
     background-position: 20% 50%;
     color: #fff;
@@ -378,7 +378,7 @@
 .contact-area {
     position: relative;
     z-index: 1;
-    background-image: url(../images/pen.jpg);
+    background-image: url(../images/pen.webp);
     background-size: cover;
     background-position: 25% 48%;
     color: #fff;
