@@ -18,7 +18,9 @@
 --------------------------------- */
 
 :root {
-    --main-color: rgb(0, 134, 58);
+    /* --main-color: rgb(0, 134, 58); */
+    --main-color: rgb(0, 84, 37);
+    --main-color-dark: rgb(0, 84, 37);
     --red-color: #e45f74;
 }
 
@@ -120,12 +122,16 @@ button {
 a:focus,
 a:active,
 a:hover,
-button:focus,
-button:active,
-button:hover,
 a b.light-color:hover {
     text-decoration: none;
     color: var(--main-color);
+}
+
+button:focus,
+button:active,
+button:hover{
+    text-decoration: none;
+    color: var(--main-color-dark);
 }
 
 img {
@@ -181,13 +187,13 @@ b.light-color {
     padding: 15px 30px;
     border-radius: 1px;
     letter-spacing: 2px;
-    border: 1px solid var(--main-color);
-    background: var(--main-color);
+    border: 1px solid var(--main-color-dark);
+    background: var(--main-color-dark);
     color: #fff;
 }
 
 .btn:hover {
-    color: var(--main-color);
+    color: var(--main-color-dark);
     background: none;
 }
 
@@ -196,11 +202,11 @@ b.light-color {
     padding: 15px 30px;
     border-radius: 1px;
     letter-spacing: 2px;
-    border: 1px solid var(--main-color);
+    border: 1px solid var(--main-color-dark);
 }
 
 .btn-2:hover {
-    background: var(--main-color);
+    background: var(--main-color-dark);
     color: #fff;
 }
 
@@ -222,7 +228,7 @@ b.light-color {
     right: 0;
     height: 2px;
     transition: all 0.3s;
-    background: var(--main-color);
+    background: var(--main-color-dark);
 }
 
 .border-btn:before {
@@ -234,7 +240,7 @@ b.light-color {
     height: 2px;
     transform: translateX(-130%);
     transition: all 0.3s;
-    background: var(--main-color);
+    background: var(--main-color-dark);
 }
 
 .border-btn:hover:after {

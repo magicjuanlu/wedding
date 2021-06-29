@@ -239,18 +239,23 @@
     color: #fff;
 }
 
-.hotels {
+.hotels, .buses-container {
     display: flex;
 }
 
-.hotel {
+.hotel, .bus {
     width: 50%;
     margin: 2em auto;
 }
 
-.hotel a {
-    /* color: var(--main-color); */
+.bus {
+
 }
+
+.bus .location {
+    color: var(--main-color) !important;
+    margin-bottom: 0.5em;
+} 
 
 /* ---------------------------------
 10. CEREMONY AREA
@@ -321,11 +326,6 @@
 
 .location {
     font-size: 1.6em;
-}
-
-a.location {
-    border: 1px solid white;
-    padding: 10px;
 }
 
 /* ---------------------------------
@@ -443,7 +443,7 @@ textarea {
 @media only screen and (max-width: 767px) {
     .ceremony-area,
     .celebration-area,
-    .hotels {
+    .hotels, .buses-container {
         display: inherit;
     }
     .map-area {
@@ -454,7 +454,7 @@ textarea {
         margin-bottom: 3em;
     }
 
-    .hotel {
+    .hotel, .bus {
         width: 100%;
     }
 
