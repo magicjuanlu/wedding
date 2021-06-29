@@ -60,7 +60,7 @@
     z-index: 1;
     background-image: url(../images/toledo.jpg);
     background-size: cover;
-    background-position: 0% 29%;
+    background-position: 50% 29%;
     color: #fff;
 }
 
@@ -73,6 +73,10 @@
     right: 0;
     z-index: -1;
     background: rgba(0, 0, 0, 0.3);
+}
+
+.counter-area .heading {
+    padding-top: 30px;
 }
 
 .remaining-time .time-sec {
@@ -371,6 +375,14 @@
     z-index: 1;
 }
 
+.contact-area {
+    position: relative;
+    z-index: 1;
+    background-image: url(../images/estampado-verde.jpg);
+    color: #fff;
+}
+
+
 .contact-area:after {
     content: '';
     position: absolute;
@@ -379,8 +391,7 @@
     left: 0;
     right: 0;
     z-index: -1;
-    opacity: 0.5;
-    background: url(../images/Background_Circle.png);
+    background: rgba(0, 0, 0, 0.3);
 }
 
 .contact-area .phone {
